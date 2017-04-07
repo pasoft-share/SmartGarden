@@ -21,5 +21,19 @@
     <ClInclude Include="__vm\.SmartGarden.vsarduino.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="WC_DEBUG.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WC_EEPROM.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WC_CONFIG.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="WC_EEPROM.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
