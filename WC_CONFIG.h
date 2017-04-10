@@ -54,8 +54,6 @@ struct WC_ConfigStruct {
 	char     HTTP_SERVER[48];
 	// Строка отправки параметров на сервер
 	//   char     HTTP_REQUEST[128];   
-	// Контрольная сумма   
-	uint16_t SRC;
 };
 
 

@@ -33,6 +33,7 @@ D:\Users\pasoft\AppData\Local\Temp\VMBuilds\SmartGarden\esp8266_nodemcuv2\Debug\
  D:\Users\pasoft\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.3.0\cores\esp8266/debug.h \
  D:\Users\pasoft\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.3.0\variants\nodemcu/pins_arduino.h \
  D:\Users\pasoft\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.3.0\variants\nodemcu/../generic/common.h \
+ D:\Users\pasoft\AppData\Local\Temp\VMBuilds\SmartGarden\esp8266_nodemcuv2\Debug\CRC16.h \
  D:\Users\pasoft\AppData\Local\Temp\VMBuilds\SmartGarden\esp8266_nodemcuv2\Debug\WC_CONFIG.h \
  D:\Users\pasoft\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.3.0\libraries\EEPROM/EEPROM.h \
  D:\Users\pasoft\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.3.0\libraries\ESP8266WiFi\src/ESP8266WiFi.h \

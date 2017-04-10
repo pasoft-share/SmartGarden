@@ -80,13 +80,18 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="CRC16.h" />
     <ClInclude Include="WC_CONFIG.h" />
     <ClInclude Include="WC_EEPROM.h" />
     <ClInclude Include="WC_DEBUG.h" />
+    <ClInclude Include="WC_RTC.h" />
     <ClInclude Include="__vm\.SmartGarden.vsarduino.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="CRC16.cpp" />
+    <ClCompile Include="WC_CONFIG.cpp" />
     <ClCompile Include="WC_EEPROM.cpp" />
+    <ClCompile Include="WC_RTC.cpp" />
   </ItemGroup>
   <PropertyGroup>
     <DebuggerFlavor>VisualMicroDebugger</DebuggerFlavor>
@@ -94,4 +99,9 @@
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties arduino.upload.port="COM4" />
+    </VisualStudio>
+  </ProjectExtensions>
 </Project>

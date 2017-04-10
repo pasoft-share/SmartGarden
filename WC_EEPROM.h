@@ -4,6 +4,8 @@
 
 #include "arduino.h"
 
+typedef uint16_t ConfigCRC;
+
 class WC_EEPROMClass
 {
 private:

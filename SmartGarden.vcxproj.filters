@@ -30,9 +30,24 @@
     <ClInclude Include="WC_CONFIG.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="CRC16.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WC_RTC.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="WC_EEPROM.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CRC16.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WC_CONFIG.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WC_RTC.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

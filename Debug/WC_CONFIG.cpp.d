@@ -1,6 +1,6 @@
-D:\Users\pasoft\AppData\Local\Temp\VMBuilds\SmartGarden\esp8266_nodemcuv2\Debug\WC_EEPROM.cpp.o: \
- D:\Users\pasoft\AppData\Local\Temp\VMBuilds\SmartGarden\esp8266_nodemcuv2\Debug\WC_EEPROM.cpp \
- D:\Users\pasoft\AppData\Local\Temp\VMBuilds\SmartGarden\esp8266_nodemcuv2\Debug\WC_EEPROM.h \
+D:\Users\pasoft\AppData\Local\Temp\VMBuilds\SmartGarden\esp8266_nodemcuv2\Debug\WC_CONFIG.cpp.o: \
+ D:\Users\pasoft\AppData\Local\Temp\VMBuilds\SmartGarden\esp8266_nodemcuv2\Debug\WC_CONFIG.cpp \
+ D:\Users\pasoft\AppData\Local\Temp\VMBuilds\SmartGarden\esp8266_nodemcuv2\Debug\WC_CONFIG.h \
  D:\Users\pasoft\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.3.0\cores\esp8266/arduino.h \
  D:\Users\pasoft\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.3.0\cores\esp8266/stdlib_noniso.h \
  D:\Users\pasoft\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.3.0\cores\esp8266/binary.h \
@@ -34,7 +34,6 @@ D:\Users\pasoft\AppData\Local\Temp\VMBuilds\SmartGarden\esp8266_nodemcuv2\Debug\
  D:\Users\pasoft\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.3.0\cores\esp8266/debug.h \
  D:\Users\pasoft\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.3.0\variants\nodemcu/pins_arduino.h \
  D:\Users\pasoft\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.3.0\variants\nodemcu/../generic/common.h \
- D:\Users\pasoft\AppData\Local\Temp\VMBuilds\SmartGarden\esp8266_nodemcuv2\Debug\WC_CONFIG.h \
  D:\Users\pasoft\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.3.0\libraries\EEPROM/EEPROM.h \
  D:\Users\pasoft\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.3.0\libraries\ESP8266WiFi\src/ESP8266WiFi.h \
  D:\Users\pasoft\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.3.0\libraries\ESP8266WiFi\src/include/wl_definitions.h \
@@ -61,7 +60,4 @@ D:\Users\pasoft\AppData\Local\Temp\VMBuilds\SmartGarden\esp8266_nodemcuv2\Debug\
  D:\Users\pasoft\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.3.0\libraries\ESP8266mDNS/ESP8266mDNS.h \
  D:\Users\pasoft\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.3.0\libraries\ESP8266WiFi\src/WiFiUdp.h \
  D:\Users\pasoft\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.3.0\cores\esp8266/Udp.h \
- D:\Users\pasoft\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.3.0\libraries\ESP8266WiFi\src/include/slist.h \
- D:\Users\pasoft\AppData\Local\Temp\VMBuilds\SmartGarden\esp8266_nodemcuv2\Debug\WC_DEBUG.h \
- D:\Users\pasoft\AppData\Local\Temp\VMBuilds\SmartGarden\esp8266_nodemcuv2\Debug\CRC16.h \
- C:\Program\ Files\ (x86)\Microsoft\ Visual\ Studio\ 14.0\Common7\IDE\Extensions\34cyio2v.nee\Micro\ Platforms\default\debuggers\VM_DBG/VM_DBG.h
+ D:\Users\pasoft\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.3.0\libraries\ESP8266WiFi\src/include/slist.h

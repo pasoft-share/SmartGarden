@@ -5,43 +5,35 @@
 #include "WC_EEPROM.h"
 #include "WC_CONFIG.h"
 #include "WC_DEBUG.h"
+#include "CRC16.h"
+
+#define WC_EEPROM_SIZE WC_CONFIG_SIZE + sizeof(ConfigCRC)
 
 uint16_t WC_EEPROMClass::getCRC()
 {
-	uint16_t src = 0;
-	uint16_t src_save = WC_Config.SRC;
-	WC_Config.SRC = 0;
-
-	for (int i = 0; i < WC_CONFIG_SIZE; i++)
-	{
-		src += *((uint8_t*)&WC_Config + i);
-	}
-	DEBUG_PRINTF("CRC=%d\n", src);
-
-	WC_Config.SRC = src_save;
-
-	return src;
+	uint16_t crc = CRC16.getCRC(WC_Config);
+	DEBUG_PRINTF("CRC=%d\n", crc);
+	return  crc;
 }
 
 void WC_EEPROMClass::begin()
 {
-	EEPROM.begin(WC_CONFIG_SIZE);
-	DEBUG_PRINTF("EEPROM init. Size = %d\n", (int)WC_CONFIG_SIZE);
+	EEPROM.begin(WC_EEPROM_SIZE);
+	DEBUG_PRINTF("EEPROM init. Size = %d\n", (int)WC_EEPROM_SIZE);
 }
 
 void WC_EEPROMClass::read()
 {
-	size_t sz1 = sizeof(WC_Config);
-	for (int i = 0; i < sz1; i++) {
-		uint8_t c = EEPROM.read(i);
-		*((uint8_t*)&WC_Config + i) = c;
-	}
-	uint16_t src = getCRC();
-	if (WC_Config.SRC == src) {
-		DEBUG_PRINTF("EEPROM Config is correct\n");
+	uint16_t vRomCRC;
+	EEPROM.get(0, WC_Config);
+	EEPROM.get(WC_CONFIG_SIZE, vRomCRC);
+
+	uint16_t vCRC = getCRC();
+	if (vRomCRC == vCRC) {
+		DEBUG_PRINTF("EEPROM Config is correct (%d)\n", vCRC);
 	}
 	else {
-		DEBUG_PRINTF("EEPROM SRC is not valid: %d %d\n", src, WC_Config.SRC);
+		DEBUG_PRINTF("EEPROM CRC (%d) is not correct. Should be %d\n", vRomCRC, vCRC);
 		reset();
 		save();
 	}
@@ -49,14 +41,12 @@ void WC_EEPROMClass::read()
 
 void WC_EEPROMClass::save()
 {
-	WC_Config.SRC = getCRC();
-	for (int i = 0; i < WC_CONFIG_SIZE; i++)
-	{
-		EEPROM.write(i, *((uint8_t*)&WC_Config + i));
-	}
-
+	uint16_t crc = getCRC();
+	EEPROM.put(0, WC_Config);
+	EEPROM.put(WC_CONFIG_SIZE, crc);
 	EEPROM.commit();
-	DEBUG_PRINTF("Save Config to EEPROM. SCR=%d\n", WC_Config.SRC);
+
+	DEBUG_PRINTF("Config saved to EEPROM (%d)\n", crc);
 }
 
 void WC_EEPROMClass::reset()

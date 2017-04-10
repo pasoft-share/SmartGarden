@@ -1,3 +1,5 @@
+﻿#include "WC_RTC.h"
+#include "CRC16.h"
 #include "WC_CONFIG.h"
 #include "WC_EEPROM.h"
 #include "WC_DEBUG.h"
@@ -11,17 +13,23 @@
 
 void setup()
 {
-	/* add setup code here */
+	DEBUG_INIT()
+	DEBUG_PRINTF("\n\nFree memory %d\n", ESP.getFreeHeap())
 
+	initialize();
 }
 
 void initialize() {
+
 	WC_EEPROM.begin();
+	WC_RTC.begin();
+
+	WC_EEPROM.read();
 }
 
 void loop()
 {
 
 	/* add main program code here */
-
+	delay(1000);
 }
