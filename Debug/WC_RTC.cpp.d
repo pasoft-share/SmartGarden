@@ -1,6 +1,6 @@
-C:\Users\peta.KYIV\AppData\Local\Temp\VMBuilds\SmartGarden\esp8266_nodemcuv2\Debug\CRC16.cpp.o: \
- C:\Users\peta.KYIV\AppData\Local\Temp\VMBuilds\SmartGarden\esp8266_nodemcuv2\Debug\CRC16.cpp \
- C:\Users\peta.KYIV\AppData\Local\Temp\VMBuilds\SmartGarden\esp8266_nodemcuv2\Debug\CRC16.h \
+C:\Users\peta.KYIV\AppData\Local\Temp\VMBuilds\SmartGarden\esp8266_nodemcuv2\Debug\WC_RTC.cpp.o: \
+ C:\Users\peta.KYIV\AppData\Local\Temp\VMBuilds\SmartGarden\esp8266_nodemcuv2\Debug\WC_RTC.cpp \
+ C:\Users\peta.KYIV\AppData\Local\Temp\VMBuilds\SmartGarden\esp8266_nodemcuv2\Debug\WC_RTC.h \
  C:\Users\peta.KYIV\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.3.0\cores\esp8266/arduino.h \
  C:\Users\peta.KYIV\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.3.0\cores\esp8266/stdlib_noniso.h \
  C:\Users\peta.KYIV\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.3.0\cores\esp8266/binary.h \

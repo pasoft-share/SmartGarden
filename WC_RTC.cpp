@@ -7,6 +7,10 @@
 void WC_RTCClass::begin()
 {
 
+}
+
+void WC_RTCClass::read()
+{
 
 }
 

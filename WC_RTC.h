@@ -5,21 +5,23 @@
 
 #include "arduino.h"
 
-#define RTC_MAGIC 0x75a78fc5
+#define RTC_MAGIC 0x75a7
 
-typedef struct {
-	uint32 magic;
+typedef struct RTCStruct {
+	uint16_t magic;
+
 	uint64 calibration;
 	float weight;
 	boolean battwarningsent;
 	boolean weightwarningsent;
-} RTC;
+};
 
 class WC_RTCClass
 {
 protected:
 public:
 	void begin();
+	void read();
 	void write();
 	bool initialized();
 };

@@ -36,6 +36,9 @@
     <ClInclude Include="WC_RTC.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="WC_FSM.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="WC_EEPROM.cpp">
@@ -48,6 +51,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="WC_RTC.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WC_FSM.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
